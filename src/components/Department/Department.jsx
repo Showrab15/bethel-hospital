@@ -39,7 +39,7 @@ const Department = () => {
       {/* Left Arrow */}
       <button
         onClick={handlePrev}
-        className={`ml-  w-[40.57px] h-[35.57px] flex items-center justify-center text-center rounded-full bg-[#8F3E97] text-white ${startIndex === 0 ? ' cursor-not-allowed' : ''}`}
+        className={`  p-2 flex items-center justify-center text-center rounded-full bg-[#8F3E97] text-white ${startIndex === 0 ? ' cursor-not-allowed' : ''}`}
         disabled={startIndex === 0}
       >
        <img className="rotate-180" src={rightarrow} alt="" />
@@ -67,7 +67,7 @@ const Department = () => {
       {/* Right Arrow */}
       <button
         onClick={handleNext}
-        className={` w-[40.57px] h-[35.57px] flex items-center justify-center text-center rounded-full bg-[#8F3E97] text-white ${startIndex + visibleItems >= items.length ? ' cursor-not-allowed' : ''}`}
+        className={` p-2 flex items-center justify-center text-center rounded-full bg-[#8F3E97] text-white ${startIndex + visibleItems >= items.length ? ' cursor-not-allowed' : ''}`}
         disabled={startIndex + visibleItems >= items.length}
       >
        <img src={rightarrow} alt="" />
