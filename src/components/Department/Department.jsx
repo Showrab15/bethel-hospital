@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import Orthopaedics from '../../assets/Orthopaedics.png'
 import Obstetrics from '../../assets/Obstetrics.png'
 import Paediatrics from '../../assets/Paediatrics.png'
@@ -9,9 +8,9 @@ const Department = () => {
     { title: 'Orthopaedics & Traumatology', image: `${Orthopaedics}`},
     { title: 'Obstetrics & Gynaecology', image:`${Obstetrics}` },
     { title: 'Paediatrics', image: `${Paediatrics}` },
-    { title: 'Plastic Surgery',  image: `${Paediatrics}` },
+    { title: 'Plastic Surgery',  image: `${Orthopaedics}` },
     { title: 'Dermatology', image:`${Obstetrics}` },
-    { title: 'Neurology',image:`${Obstetrics}` },
+    { title: 'Neurology',image:`${Orthopaedics}` },
     // Add more items as needed
   ];
 
@@ -31,12 +30,12 @@ const Department = () => {
   };
 
   return (
-   <div className="mt-10 mx-20">
+   <div className="-mt-14 mx-20">
     <dir className="flex flex-col justify-center">
-    <p className="text-[22px] leading-[20px] font-bold font-manrope text-[#8F3E97] text-center">Department</p>
+    <p className="text-[26px] leading-[20px] font-bold font-manrope text-[#8F3E97] text-center">Department</p>
     <h5  className="my-3 w-[105 7px] text-[48px] leading-[51px] font-bold font-manrope text-[#121212] text-center">We offer a comprehensive coverage of more <br /> than 80+ medical tests with reliable results</h5>
     </dir>
-     <div className=" mt-20 flex items-center justify-center space-x-10">
+     <div className=" mt-10 flex items-center justify-center space-x-10">
       {/* Left Arrow */}
       <button
         onClick={handlePrev}

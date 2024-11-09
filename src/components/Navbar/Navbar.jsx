@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div  style={{ backgroundImage: `url(${background})` }} className="bg-cover bg-center w-[1929px]  h-[906.95px] ">
+    <div  style={{ backgroundImage: `url(${background})` }} className="bg-cover bg-center mx-auto object-fill -ml- 96 w-[1929px]  h-[906.95px] ">
       <div className="flex items-center flex-row gap-20   py-8  mx-14">
         <Link className="flex items-center gap-4" rel="canonical" to="/">
           <img
@@ -29,14 +29,14 @@ const Navbar = () => {
           </span>
         </Link>
         <nav>
-          <ul className="ml-20 hidden md:flex items-center justify-center space-x-9 text-lg text-[#000000AB] poppins-regular relative ">
+          <ul className="ml -20 hidden md:flex items-center justify-center space-x-9 text-lg text-[#000000AB] poppins-regular relative ">
             <li>
               <NavLink
                 rel="canonical"
                 to="/home"
                 aria-label="Home"
                 title="Home"
-                className="hover:text-black"
+                className="hover:text-[#8F3E97]"
               >
                 Home
               </NavLink>
@@ -44,23 +44,23 @@ const Navbar = () => {
             <li>
               <NavLink
                 rel="canonical"
-                to="/products"
-                aria-label="products"
-                title="products"
-                className="hover:text-black"
+                to="/services"
+                aria-label="services"
+                title="services"
+                className="hover:text-[#8F3E97]"
               >
-                Products
+                Services
               </NavLink>
             </li>
             <li>
               <NavLink
                 rel="canonical"
-                to="/investors"
-                aria-label="investors"
-                title="investors"
-                className="hover:text-black"
+                to="/about"
+                aria-label="about"
+                title="about"
+                className="hover:text-[#8F3E97]"
               >
-                Investors
+                About
               </NavLink>
             </li>
             <li>
@@ -69,9 +69,20 @@ const Navbar = () => {
                 to="/about-Us"
                 aria-label="about"
                 title="about"
-                className="hover:text-black"
+                className="hover:text-[#8F3E97]"
               >
-                About Us
+                Our Doctors
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                rel="canonical"
+                to="/about-Us"
+                aria-label="about"
+                title="about"
+                className="hover:text-[#8F3E97]"
+              >
+               Contact Us
               </NavLink>
             </li>
           </ul>
@@ -184,7 +195,7 @@ const Navbar = () => {
         </div>
 
         <div>
-            <button className="bg-[#8F3E97] text-[#FFFEFD] rounded-[14px] w-[252px] h-[52px]  poppins-semibold flex items-center justify-evenly"><img src={callIcon} alt="" /> +91-77080 61080 </button>
+            <button className="bg-[#8F3E97] text-[#FFFEFD] rounded-[14px] w-[202px] h-[52px]  poppins-semibold flex items-center justify-evenly"><img src={callIcon} alt="" /> +91-77080 61080 </button>
         </div>
       </div>
       <Banner/>
