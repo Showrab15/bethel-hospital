@@ -195,7 +195,7 @@ const Navbar = () => {
         </div>
 
         <div>
-            <button className="-ml-28 2xl:-ml-0 max-w-xs sm:max-w-full bg-[#8F3E97] text-[24px] leading-[36px] text-[#FFFEFD] rounded-[14px] w-[292px] h-[52px]  font-poppins font-semibold flex items-center justify-evenly"><img src={callIcon} alt="" /> +91-77080 61080 </button>
+            <button className="-ml-28 2xl:-ml-0 max-w-xs sm:max-w-full bg-[#8F3E97] text-[24px] leading-[36px] text-[#FFFEFD] rounded-[10px] w-[292px] h-[52px]  font-poppins font-semibold flex items-center justify-evenly"><img src={callIcon} alt="" /> +91-77080 61080 </button>
         </div>
 
         

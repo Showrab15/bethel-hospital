@@ -11,7 +11,7 @@ const Banner = () => {
         your needs and supports your well-being every step of the way.
       </p>
       <div>
-        <button className="bg-[#8F3E97] text-[#FFFEFD] rounded-[14px] text-[17px] w-[222px] h-[52px]  poppins-medium flex items-center justify-evenly">
+        <button className="bg-[#8F3E97] text-[#FFFEFD] rounded-[10px] text-[17px] w-[222px] h-[52px]  poppins-medium flex items-center justify-evenly">
          Book An Appointment{" "}
         </button>
       </div>
