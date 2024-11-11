@@ -30,7 +30,7 @@ const Department = () => {
   };
 
   return (
-   <div className="-mt-14 mx-20">
+   <div className="-mt-14 mx-[101px]">
     <dir className="flex flex-col justify-center">
     <p className="text-[26px] leading-[20px] font-bold font-manrope text-[#8F3E97] text-center">Department</p>
     <h5  className="my-3 w-[105 7px] text-[48px] leading-[51px] font-bold font-manrope text-[#121212] text-center">We offer a comprehensive coverage of more <br /> than 80+ medical tests with reliable results</h5>
@@ -55,7 +55,7 @@ const Department = () => {
             <img
               src={item.image}
               alt={item.title}
-              className="  mb-2 object-cover rounded-full"
+              className="mb-2 object-cover rounded-full"
             />
             <div className="mt-2 text-lg font-semibold text-gray-700">
               {item.title}

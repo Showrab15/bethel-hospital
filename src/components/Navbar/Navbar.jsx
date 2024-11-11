@@ -16,8 +16,8 @@ const Navbar = () => {
   };
 
   return (
-    <div  style={{ backgroundImage: `url(${background})` }} className="bg-cover bg-center mx-auto object-fill -ml- 96 w-[1929px]  h-[906.95px] ">
-      <div className="flex items-center flex-row gap-20   py-8  mx-14">
+    <div  style={{ backgroundImage: `url(${background})` }} className="bg-cover bg-center mx-auto object-fill  w-[1929px]  h-[906.95px] ">
+      <div className="grid grid-cols-3  items-center py-8 mx-[101px]">
         <Link className="flex items-center gap-4" rel="canonical" to="/">
           <img
             src={logo}
@@ -28,8 +28,8 @@ const Navbar = () => {
             Bethel Hospital
           </span>
         </Link>
-        <nav>
-          <ul className="ml -20 hidden md:flex items-center justify-center space-x-9 text-lg text-[#000000AB] poppins-regular relative ">
+      
+          <ul className=" -ml-72 hidden md:flex items-center justify-center space-x-9 text-lg text-[#000000AB] poppins-regular ">
             <li>
               <NavLink
                 rel="canonical"
@@ -86,7 +86,7 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-        </nav>
+      
 
         {/*----------------------- Mobile Menu -------------------------*/}
         <div className="md:hidden">
@@ -195,8 +195,10 @@ const Navbar = () => {
         </div>
 
         <div>
-            <button className="bg-[#8F3E97] text-[#FFFEFD] rounded-[14px] w-[202px] h-[52px]  poppins-semibold flex items-center justify-evenly"><img src={callIcon} alt="" /> +91-77080 61080 </button>
+            <button className="-ml-28 2xl:-ml-0 max-w-xs sm:max-w-full bg-[#8F3E97] text-[24px] leading-[36px] text-[#FFFEFD] rounded-[14px] w-[292px] h-[52px]  font-poppins font-semibold flex items-center justify-evenly"><img src={callIcon} alt="" /> +91-77080 61080 </button>
         </div>
+
+        
       </div>
       <Banner/>
     </div>

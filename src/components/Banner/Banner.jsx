@@ -1,9 +1,9 @@
 const Banner = () => {
   return (
-    <div className="mx-14 mt-10 ">
+    <div className="mx-[101px] mt-10 ">
       <h1 className="w-[720px] font-semibold   text-[#121212] text-[48px] leading-[51px]">
-        we are dedicated to providing exceptional healthcare to you and your
-        family.
+        we are dedicated to providing exceptional <span className="text-[#8F3E97]"> healthcare to you and your
+        family.</span>
       </h1>
       <p className="w-[710px] my-6 text-[18px] leading-[22px] font-manrope font-medium  text-[#121212]">
         With state-of-the-art medical technology, expert doctors, and a
