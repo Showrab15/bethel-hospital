@@ -90,7 +90,7 @@ const Department = () => {
             .map((item, index) => (
               <div
                 key={index}
-                className="group hover:cursor-pointer hover:bg-[#8F3E97]  hover:rounded-bl-[10px] hover:rounded-br-[10px] font-manrope   w-[331.92px] h-[261.37px] p-4 bg-white shadow-md border border-t-4 border-t-[#8F3E97]  flex flex-col items-center justify-center text-center"
+                className="group hover:cursor-pointer transition-all duration-700 ease-in-out transform  hover:bg-[#8F3E97]  hover:rounded-bl-[10px] hover:rounded-br-[10px] font-manrope   w-[331.92px] h-[261.37px] p-4 bg-white shadow-md border border-t-4 border-t-[#8F3E97]  flex flex-col items-center justify-center text-center"
               >
                 <img
                   src={item.image}
