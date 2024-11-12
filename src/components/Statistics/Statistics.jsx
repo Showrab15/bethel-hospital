@@ -3,6 +3,7 @@ import icon2 from "../../assets/icon2.png";
 import icon3 from "../../assets/icon3.png";
 import icon4 from "../../assets/icon4.png";
 import border from "../../assets/border.png";
+import CountUp from "react-countup";
 
 const Statistics = () => {
   return (
@@ -31,8 +32,11 @@ const Statistics = () => {
           <div className="mt-60 flex gap-10 ">
             <div className="flex items-center flex-col gap-2 text-center w-[275.92px] h-[251.37px] bg-[#8F3E97] rounded-[10px]">
               <img className="w-[129px]  h-[136px]" src={icon1} alt="" />
-              <h3 className="flex flex-col text-[45px] font-manrope font-semibold leading-[16px] text-white">
-                170822 +
+              <h3 className="flex flex-col  justify-center items-center text-center text-[45px] font-manrope font-semibold leading-[16px] text-white">
+                 <CountUp
+                 end={170822}
+                 duration={3.75}
+                 >  170822 + </CountUp>
                 <img className="mt-4" src={border} alt="" />
               </h3>
               <p className="text-[20px] leading-[16px] font-semibold font-manrope text-white  ">
@@ -42,8 +46,12 @@ const Statistics = () => {
 
             <div className="-mt-48 flex items-center flex-col gap-2 text-center w-[275.92px] h-[251.37px] bg-[#8F3E97] rounded-[10px]">
               <img className="w-[129px]  h-[136px]" src={icon3} alt="" />
-              <h3 className="flex flex-col text-[45px] font-manrope font-semibold leading-[16px] text-white">
-                9770 +
+              <h3 className="flex flex-col justify-center items-center text-center text-[45px] font-manrope font-semibold leading-[16px] text-white">
+                <CountUp
+                 end={9770}
+                 duration={3.75}
+                 > 9770 +</CountUp>
+
                 <img className="mt-4" src={border} alt="" />
               </h3>
               <p className="text-[20px] leading-[16px] font-semibold font-manrope text-white  ">
@@ -55,8 +63,11 @@ const Statistics = () => {
           <div className="mt-[60px] flex gap-10 0 w-[33 5px]">
             <div className="flex items-center flex-col gap-2 text-center w-[275.92px] h-[251.37px] bg-[#8F3E97] rounded-[10px]">
               <img className="w-[129px]  h-[136px]" src={icon2} alt="" />
-              <h3 className="flex flex-col text-[45px] font-manrope font-semibold leading-[16px] text-white">
-                5297 +
+              <h3 className="flex flex-col justify-center items-center text-center text-[45px] font-manrope font-semibold leading-[16px] text-white">
+                  <CountUp
+                 end={5297}
+                 duration={3.75}
+                 >  5297 + </CountUp>
                 <img className="mt-4" src={border} alt="" />
               </h3>
               <p className="text-[20px] leading-[16px] font-semibold font-manrope text-white  ">
@@ -66,8 +77,11 @@ const Statistics = () => {
 
             <div className="-mt-48 flex items-center flex-col gap-2 text-center w-[275.92px] h-[251.37px] bg-[#8F3E97] rounded-[10px]">
               <img className="w-[129px]  h-[136px]" src={icon4} alt="" />
-              <h3 className=" flex flex-col text-[45px] font-manrope font-semibold leading-[16px] text-white">
-                6821 +
+              <h3 className=" flex flex-col justify-center items-center text-center text-[45px] font-manrope font-semibold leading-[16px] text-white">
+                 <CountUp
+                 end={6821}
+                 duration={3.75}
+                 > 6821 +  </CountUp>
                 <img className="mt-4" src={border} alt="" />
               </h3>
               <p className="text-[20px] leading-[16px] font-semibold font-manrope text-white  ">

@@ -5,6 +5,7 @@ import Schedule from "../../components/Schedule/Schedule";
 import Statistics from "../../components/Statistics/Statistics";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import Testimonial from "../../components/Testimonial/Testimonial";
 // ..
 AOS.init();
 const Home = () => {
@@ -24,6 +25,10 @@ const Home = () => {
         {" "}
         <Schedule />
       </div>
+      <div data-aos="fade-in" data-aos-anchor-placement="center-bottom">
+        {" "}
+        <Testimonial/>
+        </div>
     </>
   );
 };
