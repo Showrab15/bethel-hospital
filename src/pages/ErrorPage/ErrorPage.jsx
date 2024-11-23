@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+// error page
 const ErrorPage = () => {
   return (
     <div className="flex items-center justify-center min-h-screen text-gray-800">
