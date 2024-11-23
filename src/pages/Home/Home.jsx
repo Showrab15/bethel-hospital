@@ -6,14 +6,15 @@ import Statistics from "../../components/Statistics/Statistics";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import Testimonial from "../../components/Testimonial/Testimonial";
+import ComingSoon from "../ComingSoon/ComingSoon";
 // ..
 AOS.init();
 const Home = () => {
   return (
     <>
       {/* <Banner/> */}
-      {/* <ComingSoon/> */}
-      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <ComingSoon/>
+      {/* <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         {" "}
         <Department />
       </div>
@@ -28,7 +29,7 @@ const Home = () => {
       <div data-aos="fade-in" data-aos-anchor-placement="center-bottom">
         {" "}
         <Testimonial/>
-        </div>
+        </div> */}
     </>
   );
 };
