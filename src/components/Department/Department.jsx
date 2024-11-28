@@ -13,8 +13,7 @@ const Department = () => {
       title: "Orthopaedics & Traumatology",
       description:
         "Our team of experienced orthopaedic surgeons and specialists utilizes advanced diagnostic techniques and state-of-the-art treatments",
-      image: `${Orthopaedics}`
-     
+      image: `${Orthopaedics}`,
     },
     {
       title: "Obstetrics & Gynaecology",
@@ -22,7 +21,7 @@ const Department = () => {
         "Our Obstetrics & Gynecology department is committed to providing comprehensive and compassionate care for women at every stage of life.",
       image: `${Obstetrics}`,
     },
-   
+
     {
       title: "Paediatrics",
       description:
@@ -40,8 +39,8 @@ const Department = () => {
       image: `${daibatology}`,
       description:
         "Our Diabetology department is dedicated to providing comprehensive care for individuals with diabetes and related metabolic disorders.",
-    }
-    
+    },
+
     // Add more items as needed
   ];
 
@@ -61,16 +60,17 @@ const Department = () => {
   };
 
   return (
-    <div className="-mt-14 mx-[101px]">
-      <dir className="flex flex-col justify-center">
+    <div className="mt-24 md:-mt-14 lg:mx-[101px] mx-[50px]">
+      <div className="flex flex-col md:justify-center">
         <p className="text-[26px] leading-[20px] font-bold font-manrope text-[#8F3E97] text-center">
           Department
         </p>
-        <h5 className="my-3 w-[105 7px] text-[48px] leading-[51px] font-bold font-manrope text-[#121212] text-center">
-          We offer a comprehensive coverage of more <br /> than 80+ medical
-          tests with reliable results
+        <h5 className="text-l eft my-3 md:w-full w-[350px] text-[28px] md:text-[48px] md:leading-[51px] font-bold font-manrope text-[#121212] md: text-center">
+          We offer a comprehensive coverage of more{" "}
+          <br className="hidden md:block" /> than 80+ medical tests with
+          reliable results
         </h5>
-      </dir>
+      </div>
       <div className=" mt-10 flex items-center justify-center space-x-10">
         {/* Left Arrow */}
         <button
@@ -97,12 +97,13 @@ const Department = () => {
                   alt={item.title}
                   className="mb-2 object-cover rounded-full group-hover:hidden"
                 />
-                <div className={`mt-2 text-lg font-semibold text-gray-700 group-hover:hidden ${
-    item.title === "Orthopaedics & Traumatology"
-      ? "-mb-10 text-[15px] font-bold"  // Adjust width and add extra margin-top for this title
-     
-      : ""
-  }`}>
+                <div
+                  className={`mt-2 text-lg font-semibold text-gray-700 group-hover:hidden ${
+                    item.title === "Orthopaedics & Traumatology"
+                      ? "-mb-10 text-[15px] font-bold" // Adjust width and add extra margin-top for this title
+                      : ""
+                  }`}
+                >
                   {item.title}
                 </div>
                 <div className="mt-2 items-start justify-start text-[16px] leading-[30px] font-normal font-manrope text-white text-left group-hover:flex hidden">

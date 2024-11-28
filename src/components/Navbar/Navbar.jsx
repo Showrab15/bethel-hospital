@@ -1,6 +1,6 @@
 import logo from "../../assets/bethel-hospital.png";
-import callIcon from '../../assets/Vector.png'
-import background from '../../assets/background.png'
+import callIcon from "../../assets/Vector.png";
+import background from "../../assets/background.png";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import Banner from "../Banner/Banner";
@@ -16,7 +16,10 @@ const Navbar = () => {
   };
 
   return (
-    <div  style={{ backgroundImage: `url(${background})` }} className="bg-cover bg-center mx-auto object-fill  w-[1929px]  h-[906.95px] ">
+    <div
+      style={{ backgroundImage: `url(${background})` }}
+      className="bg-cover bg-center mx-auto object-fill  md:w-[1929px]  md:h-[906.95px] "
+    >
       <div className="grid grid-cols-3  items-center py-8 mx-[101px]">
         <Link className="flex items-center gap-4" rel="canonical" to="/">
           <img
@@ -28,65 +31,64 @@ const Navbar = () => {
             Bethel Hospital
           </span>
         </Link>
-      
-          <ul className=" -ml-72 hidden md:flex items-center justify-center space-x-9 text-lg text-[#000000AB] poppins-regular ">
-            <li>
-              <NavLink
-                rel="canonical"
-                to="/home"
-                aria-label="Home"
-                title="Home"
-                className="hover:text-[#8F3E97]"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                rel="canonical"
-                to="/services"
-                aria-label="services"
-                title="services"
-                className="hover:text-[#8F3E97]"
-              >
-                Services
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                rel="canonical"
-                to="/about"
-                aria-label="about"
-                title="about"
-                className="hover:text-[#8F3E97]"
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                rel="canonical"
-                to="/about-Us"
-                aria-label="about"
-                title="about"
-                className="hover:text-[#8F3E97]"
-              >
-                Our Doctors
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                rel="canonical"
-                to="/about-Us"
-                aria-label="about"
-                title="about"
-                className="hover:text-[#8F3E97]"
-              >
-               Contact Us
-              </NavLink>
-            </li>
-          </ul>
-      
+
+        <ul className=" -ml-72 hidden md:flex items-center justify-center space-x-9 text-lg text-[#000000AB] poppins-regular ">
+          <li>
+            <NavLink
+              rel="canonical"
+              to="/home"
+              aria-label="Home"
+              title="Home"
+              className="hover:text-[#8F3E97]"
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              rel="canonical"
+              to="/services"
+              aria-label="services"
+              title="services"
+              className="hover:text-[#8F3E97]"
+            >
+              Services
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              rel="canonical"
+              to="/about"
+              aria-label="about"
+              title="about"
+              className="hover:text-[#8F3E97]"
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              rel="canonical"
+              to="/about-Us"
+              aria-label="about"
+              title="about"
+              className="hover:text-[#8F3E97]"
+            >
+              Our Doctors
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              rel="canonical"
+              to="/about-Us"
+              aria-label="about"
+              title="about"
+              className="hover:text-[#8F3E97]"
+            >
+              Contact Us
+            </NavLink>
+          </li>
+        </ul>
 
         {/*----------------------- Mobile Menu -------------------------*/}
         <div className="md:hidden">
@@ -195,12 +197,12 @@ const Navbar = () => {
         </div>
 
         <div>
-            <button className="-ml-28 2xl:-ml-0 max-w-xs sm:max-w-full bg-[#8F3E97] text-[24px] leading-[36px] text-[#FFFEFD] rounded-[10px] w-[292px] h-[52px]  font-poppins font-semibold flex items-center justify-evenly"><img src={callIcon} alt="" /> +91-77080 61080 </button>
+          <button className="md:-ml-28 2xl:-ml-0 max-w-xs sm:max-w-full bg-[#8F3E97] text-[24px] leading-[36px] text-[#FFFEFD] rounded-[10px] w-[292px] h-[52px]  font-poppins font-semibold flex items-center justify-evenly">
+            <img src={callIcon} alt="" /> +91-77080 61080{" "}
+          </button>
         </div>
-
-        
       </div>
-      <Banner/>
+      <Banner />
     </div>
   );
 };

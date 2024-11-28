@@ -21,14 +21,14 @@ const Home = () => {
         {" "}
         <Statistics />
       </div>
-      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      {/* <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         {" "}
         <Schedule />
       </div>
       <div data-aos="fade-in" data-aos-anchor-placement="center-bottom">
         {" "}
         <Testimonial/>
-        </div>
+        </div> */}
     </>
   );
 };
