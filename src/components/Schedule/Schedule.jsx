@@ -2,7 +2,7 @@ import ScheduleBAnner from "../../assets/Schedule.png";
 import rightIcon from "../../assets/rightIcon.png";
 const Schedule = () => {
   return (
-    <div className="md:mx-[101px] mt-20 flex gap-10 justify-between items-center ">
+    <div className="px-[50px] mt-20 flex gap-10 justify-between items-center ">
       <div>
         <img className="w-full h-full" src={ScheduleBAnner} alt="" />
       </div>

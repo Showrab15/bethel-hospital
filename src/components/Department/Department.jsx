@@ -60,7 +60,7 @@ const Department = () => {
   };
 
   return (
-    <div className="mt-24 md:-mt-14 lg:mx-[101px] mx-[50px]">
+    <div className="mt-24  lg: px-[50px] mx-[ 50px]">
       <div className="flex flex-col md:justify-center">
         <p className="text-[26px] leading-[20px] font-bold font-manrope text-[#8F3E97] text-center">
           Department
