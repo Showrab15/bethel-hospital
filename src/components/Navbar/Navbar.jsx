@@ -56,7 +56,7 @@ const Navbar = () => {
         <li>
           <NavLink
             rel="canonical"
-            to="/about-Us"
+            to="/our-doctors"
             aria-label="Our Doctors"
             className="hover:text-[#8F3E97] w-[5px]"
           >
@@ -79,7 +79,7 @@ const Navbar = () => {
   
       {/* Call Button */}
     
-      <div className="flex items-center justify-center p-4">
+      <div className="md:flex hidden items-center justify-center p-4">
   {/* <button className="bg-[#8F3E97] text-white rounded-md px-6 py-4 text-lg shadow-lg flex items-center">
     <img src={callIcon} alt="Call Icon" className="w-5 h-5 mr-2" />
    <span> +91-77080 61080</span>

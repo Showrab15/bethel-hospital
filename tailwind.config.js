@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // tailwind.config.js
 module.exports = {
   content: [
@@ -26,6 +27,7 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         manrope: ['Manrope', 'sans-serif'],
+        yeseva : ['Yeseva', 'sans-serif']
       },
     },
   },

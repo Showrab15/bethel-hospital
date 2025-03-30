@@ -1,7 +1,11 @@
-import callIcon from '../../assets/callICon.png'
-import locationIcon from '../../assets/location.png'
-import clockIcon from '../../assets/callICon.png'
-import emailIcon from '../../assets/email.png'
+import callIcon from "../../assets/Ringer_Volume.png";
+import callIconWhite from "../../assets/Ringer Volume_white.png"; // White version of the icon
+import locationIcon from "../../assets/location.png";
+import locationIconWhite from "../../assets/Location_white.png";
+import clockIcon from "../../assets/Ringer_Volume.png";
+import clockIconWhite from "../../assets/Ringer Volume_white.png";
+import emailIcon from "../../assets/email.png";
+import emailIconWhite from "../../assets/LetterIcon_white.png";
 
 const Contact = () => {
   return (
@@ -13,30 +17,62 @@ const Contact = () => {
         Contact
       </h3>
       <div className="grid md:grid-cols-4 grid-cols-1 gap-4 mt-10 ml-10">
-        <div className="bg-[#DDDDDD] hover:bg-[#8F3E97] group  rounded-[5px] w-[252px] h-[245px] flex flex-col justify-center items-center my-auto">
-            <img className="group-hover:text-white" src={callIcon} alt="" />
-            <h2 className="text-[#8F3E97] font-poppins font-bold group-hover:text-white  text-[18px] mt-2"> Emergency</h2>
-            <p className="text-[#8F3E97] font-poppins font-regular group-hover:text-white my-1 text-[16px]">(237) 681-812-255</p>
-            <p className="text-[#8F3E97] font-poppins font-regular group-hover:text-white my-1 text-[16px]">(237) 666-331-894</p>
-        </div>
-        <div className="bg-[#DDDDDD] hover:bg-[#8F3E97] group  rounded-[5px] w-[252px] h-[245px] flex flex-col justify-center items-center my-auto">
-            <img className="group-hover:text-white" src={locationIcon} alt="" />
-            <h2 className="text-[#8F3E97] font-poppins font-bold group-hover:text-white  text-[18px] mt-2"> Location</h2>
-            <p className="text-[#8F3E97] font-poppins font-regular group-hover:text-white my-1 text-[16px]">0123 Some place</p>
-            <p className="text-[#8F3E97] font-poppins font-regular group-hover:text-white my-1 text-[16px]">0123 Some place</p>
-        </div>
-        <div className="bg-[#DDDDDD] hover:bg-[#8F3E97] group  rounded-[5px] w-[252px] h-[245px] flex flex-col justify-center items-center my-auto">
-            <img className="group-hover:text-white" src={emailIcon} alt="" />
-            <h2 className="text-[#8F3E97] font-poppins font-bold group-hover:text-white  text-[18px] mt-2"> Email</h2>
-            <p className="text-[#8F3E97] font-poppins font-regular group-hover:text-white my-1 text-[16px]">fildineeesoe@gmil.com</p>
-            <p className="text-[#8F3E97] font-poppins font-regular group-hover:text-white my-1 text-[16px]">fildineeesoe@gmil.com</p>
-        </div>
-        <div className="bg-[#DDDDDD] hover:bg-[#8F3E97] group  rounded-[5px] w-[252px] h-[245px] flex flex-col justify-center items-center my-auto">
-            <img className="group-hover:text-white" src={clockIcon} alt="" />
-            <h2 className="text-[#8F3E97] font-poppins font-bold group-hover:text-white  text-[18px] mt-2"> Working Hours</h2>
-            <p className="text-[#8F3E97] font-poppins font-regular group-hover:text-white my-1 text-[16px]">Mon-Sat 09:00-20:00</p>
-            <p className="text-[#8F3E97] font-poppins font-regular group-hover:text-white my-1 text-[16px]">Sunday Emergency only</p>
-        </div>
+        {[
+          {
+            icon: callIcon,
+            hoverIcon: callIconWhite,
+            title: "Emergency",
+            lines: ["(237) 681-812-255", "(237) 666-331-894"],
+          },
+          {
+            icon: locationIcon,
+            hoverIcon: locationIconWhite,
+            title: "Location",
+            lines: ["0123 Some place", "0123 Some place"],
+          },
+          {
+            icon: emailIcon,
+            hoverIcon: emailIconWhite,
+            title: "Email",
+            lines: ["fildineeesoe@gmil.com", "fildineeesoe@gmil.com"],
+          },
+          {
+            icon: clockIcon,
+            hoverIcon: clockIconWhite,
+            title: "Working Hours",
+            lines: ["Mon-Sat 09:00-20:00", "Sunday Emergency only"],
+          },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="bg-[#DDDDDD] hover:bg-[#8F3E97] group rounded-[5px] w-[252px] h-[245px] flex flex-col justify-center items-center my-auto transition-all duration-300"
+          >
+            {/* Image Swap on Hover */}
+            <img
+              src={item.icon}
+              className="group-hover:hidden block"
+              alt=""
+            />
+            <img
+              src={item.hoverIcon}
+              className="hidden group-hover:block"
+              alt=""
+            />
+
+            {/* Text Elements */}
+            <h2 className="text-[#8F3E97] font-poppins font-bold group-hover:text-white text-[18px] mt-2">
+              {item.title}
+            </h2>
+            {item.lines.map((line, i) => (
+              <p
+                key={i}
+                className="text-[#8F3E97] font-poppins font-regular group-hover:text-white my-1 text-[16px]"
+              >
+                {line}
+              </p>
+            ))}
+          </div>
+        ))}
       </div>
     </div>
   );
