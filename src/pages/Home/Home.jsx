@@ -8,7 +8,9 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 import ComingSoon from "../ComingSoon/ComingSoon";
 import Contact from "../../components/Contact/Contact";
 import Banner from './../../components/Banner/Banner';
-// ..
+import BannerNew from "../../components/Banner/bannerNew";
+import Insurance from "../../components/Insurance/Insurance";
+
 AOS.init();
 AOS.init({
   disable: function() {
@@ -19,7 +21,8 @@ AOS.init({
 const Home = () => {
   return (
     <>
-    <Banner/>
+    {/* <Banner/> */}
+    <BannerNew/>
      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         {" "}
         <Department/>
@@ -35,8 +38,9 @@ const Home = () => {
        <div data-aos="fade-in" data-aos-anchor-placement="center-bottom">
         {" "}
         <Testimonial/>
-         </div>
-         <Contact/>
+         </div> 
+         <Insurance></Insurance>
+          <Contact/>
     </>
   );
 };

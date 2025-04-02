@@ -133,7 +133,7 @@ const Service = () => {
               natural beauty and restoring function with precision and care. Our
               team of board-certified plastic surgeons combines advanced
               techniques with a compassionate approach to deliver outstanding
-              results tailored to each patient's unique needs and goals. <br />{" "}
+              results tailored to each {`patient's`} unique needs and goals. <br />{" "}
               <br />
               Specialized care for conditions affecting the hands, including
               carpal tunnel syndrome, tendon repairs, and arthritis-related

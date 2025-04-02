@@ -86,7 +86,7 @@ const Navbar = () => {
   </button> */}
   <button className=" bg-[#8F3E97] text-[20px] xl:text-[24px]
    leading-[36px] text-[#FFFEFD] rounded-[10px] w-[292px] h-[52px]  font-poppins font-semibold flex items-center justify-evenly">
-            <img src={callIcon} alt="" /> +91-77080 61080{" "}
+            <img src={callIcon} alt="" /> 0422- 4713822 {" "}
           </button>
 </div>
   

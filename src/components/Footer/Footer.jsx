@@ -36,7 +36,7 @@ const Footer = () => {
        Contact Us
           </h2>
         <ul className="text-[16px] font-normal text-[#FCFEFE] mt-4 space-y-2">
-            <li><strong>Call</strong>: (237) 681-812-255</li>
+            <li><strong>Call</strong>: +91-77080 61080 </li>
             <li><strong>Email</strong>: fildineesoe@gmail.com</li>
             <li className="w-[300px]"><strong>Address:</strong>: 223, Dr Rajendra Prasad Rd,
 Tatabad, Gandhipuram, Coimbatore, 

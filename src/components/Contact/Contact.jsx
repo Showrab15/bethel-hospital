@@ -22,24 +22,24 @@ const Contact = () => {
             icon: callIcon,
             hoverIcon: callIconWhite,
             title: "Emergency",
-            lines: ["(237) 681-812-255", "(237) 666-331-894"],
+            lines: ["+91-77080 61080 ", "+91-77080 61080 "],
           },
           {
             icon: locationIcon,
             hoverIcon: locationIconWhite,
             title: "Location",
-            lines: ["0123 Some place", "0123 Some place"],
+            lines: ["223, Dr Rajendra Prasad Rd, Tatabad, Gandhipuram", " Coimbatore, Tamil Nadu 641012"],
           },
           {
             icon: emailIcon,
             hoverIcon: emailIconWhite,
             title: "Email",
-            lines: ["fildineeesoe@gmil.com", "fildineeesoe@gmil.com"],
+            lines: [ "fildineeesoe@gmil.com"],
           },
           {
             icon: clockIcon,
             hoverIcon: clockIconWhite,
-            title: "Working Hours",
+            title: "24 Hours",
             lines: ["Mon-Sat 09:00-20:00", "Sunday Emergency only"],
           },
         ].map((item, index) => (

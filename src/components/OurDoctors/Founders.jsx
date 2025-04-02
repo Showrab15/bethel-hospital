@@ -49,14 +49,14 @@ const Founders = () => {
         {foundersData.map((founder, index) => (
           <div
             key={index}
-            className="  relative bg-[#211516] hover:bg-[#04212f] group overflow-hidden"
+            className="  relative bg-[#211516] hover:bg-[#8F3E97] group overflow-hidden"
           >
             <img
               src={founder.image}
               alt={`Founder ${index + 1}`}
               className="w-full filter grayscale group-hover:grayscale-0 transition-all duration-300"
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#04212f] bg-opacity-70 text-white text-center p-6 transform translate-y-full group-hover:translate-y-0 transition-all duration-300">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#8F3E97] bg-opacity-70 text-white text-center p-6 transform translate-y-full group-hover:translate-y-0 transition-all duration-300">
               <h2 className="text-lg font-semibold">{founder.name}</h2>
               <p className="text-sm">{founder.role}</p>
             </div>
