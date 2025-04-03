@@ -15,9 +15,9 @@ import { motion } from "framer-motion";
 const AboutUs = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 items-center justify-center">
+      <div className="mt-8 flex flex-col gap-10 items-center justify-center">
         {/* First Box - Image on Right, Text on Left */}
-        <div className="lg:flex items-start gap-8 mt-[50px] px-[50px]">
+        <div className="lg:flex items-start gap-8 md:mt-[50px] mt-[20px] md:px-[50px] px-6">
           {/* Left Side (Text) */}
           <motion.div
             className="lg:w-6/12 pl-6"
@@ -55,7 +55,7 @@ const AboutUs = () => {
 
           {/* Right Side (Images) */}
           <motion.div
-            className="lg:w-6/12 flex flex-col gap-4"
+            className="mt-4 md:mt-0 lg:w-6/12 flex flex-col gap-4"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
@@ -88,7 +88,7 @@ const AboutUs = () => {
         </div>
 
         {/* Second Box - Image on Left, Text on Right */}
-        <div className="lg:flex items-start gap-8 mt-[50px] px-[50px]">
+        <div className="lg:flex items-start gap-8 md:mt-[50px] mt-[20px] md:px-[50px] px-6">
           {/* Left Side (Images) */}
           <motion.div
             className="lg:w-6/12 flex flex-col gap-4"
@@ -124,13 +124,13 @@ const AboutUs = () => {
 
           {/* Right Side (Text) */}
           <motion.div
-            className="lg:w-6/12 pl-10"
+            className="lg:w-6/12 md:pl-10 pl-6"
             initial={{ opacity: 0, x: 50 }} // Opposite of the first box
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[#8F3E97] font-bold text-[18px] lg:text-[30px] font-manrope">
+            <h2 className="mt-4 md:mt-0 text-[#8F3E97] font-bold text-[18px] lg:text-[30px] font-manrope">
               Ground Floor: Patient Services Hub
             </h2>
             <ul className="mt-4 list-disc font-medium font-poppins text-[16px] lg:text-[18px] space-y-4">
@@ -159,7 +159,7 @@ const AboutUs = () => {
         </div>
 
         {/* Third Box - Image on Right, Text on Left */}
-        <div className="lg:flex items-start gap-8 mt-[50px] px-[50px]">
+        <div className="lg:flex items-start gap-8 md:mt-[50px] mt-[20px]  md:px-[50px] px-6">
           {/* Left Side (Text) */}
           <motion.div
             className="lg:w-6/12 pl-6"
@@ -196,7 +196,7 @@ const AboutUs = () => {
 
           {/* Right Side (Images) */}
           <motion.div
-            className="lg:w-6/12 flex flex-col gap-4"
+            className="lg:w-6/12 flex flex-col gap-4 md:mt-0 mt-4"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
@@ -230,7 +230,7 @@ const AboutUs = () => {
 
         {/* fourth box */}
 
-        <div className="lg:flex items-start gap-8 mt-[50px] px-[50px]">
+        <div className="lg:flex items-start gap-8 md:mt-[50px] mt-[20px] md:px-[50px] px-6">
           {/* Left Side (Images) */}
           <motion.div
             className="lg:w-6/12 flex flex-col gap-4"
@@ -266,13 +266,13 @@ const AboutUs = () => {
 
           {/* Right Side (Text) */}
           <motion.div
-            className="lg:w-6/12 pl-10"
+            className="lg:w-6/12 md:pl-10 pl-6"
             initial={{ opacity: 0, x: 50 }} // Opposite of the first box
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h2 className="text-[#8F3E97] font-bold text-[18px] lg:text-[30px] font-manrope">
+            <h2 className="md:mt-0 mt-4 text-left text-[#8F3E97] font-bold text-[18px] lg:text-[30px] font-manrope">
               Advanced Care Units
             </h2>
             <ul className="mt-4 list-disc font-medium font-poppins text-[16px] lg:text-[18px] space-y-4">
@@ -300,7 +300,7 @@ const AboutUs = () => {
         </div>
 
         {/* fifth box */}
-        <div className="lg:flex items-start gap-8 mt-[50px] px-[50px]">
+        <div className="lg:flex items-start gap-8 md:mt-[50px] mt-[20px] lg:px-[50px] px-6 ">
           {/* Left Side (Text) */}
           <motion.div
             className="lg:w-6/12 pl-6"
@@ -359,7 +359,7 @@ const AboutUs = () => {
                 viewport={{ once: true }}
               >
                 <img
-                  className="w-full transition-transform duration-500 group-hover:scale-105"
+                  className="md:mt-0 mt-4 w-full transition-transform duration-500 group-hover:scale-105"
                   src={img}
                   alt="Image"
                 />

@@ -1,10 +1,12 @@
+import Banner from "../../components/Service/Banner";
 import Service from "../../components/Service/Service";
 
 const Services = () => {
     return (
-        <div>
+        <>
+        <Banner/>
             <Service/>
-        </div>
+        </>
     );
 };
 

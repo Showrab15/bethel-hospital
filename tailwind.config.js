@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 // tailwind.config.js
 module.exports = {
   content: [
@@ -20,16 +19,27 @@ module.exports = {
 
       "2xl": "1484px",
       // => @media (min-width: 1536px) { ... }
-
-     
     },
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         manrope: ['Manrope', 'sans-serif'],
-        yeseva : ['Yeseva', 'sans-serif']
+        yeseva: ['Yeseva', 'sans-serif'],
       },
-    },
+      keyframes: {
+        float: {
+          '0%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-12px)' },
+          '100%': { transform: 'translateY(0px)' },
+        },
+      },
+      animation: {
+        // 👇 notice the custom cubic-bezier easing for smooth looping
+        float: 'float 6s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite',
+      },
+    }
+    
+    
   },
   plugins: [],
 };

@@ -11,16 +11,16 @@ const Banner = () => {
   return (
     <div className="relative w-full">
       <img
-        className="w-full h-[300px] md:h-[400px] lg:h-[534px] object-cover"
+        className="w-full h-[220px] md:h-[350px] lg:h-[534px] object-cover"
         src={servicesBanner}
-        alt="Banner"
+        alt="Services Banner"
       />
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
-        <div className="flex items-center text-white text-2xl md:text-4xl font-semibold space-x-2">
+        <div className="flex items-center text-white text-2xl md:text-4xl  font-semibold font-manrope space-x-2">
           <span>Bethel</span>
           {pathSegments.map((segment, index) => (
             <span key={index} className="flex items-center space-x-2">
-              <FiChevronRight />
+              <FiChevronRight className="text-[20px] md:text-[30px] lg:text-[40px]" />
               <span className="capitalize">{segment}</span>
             </span>
           ))}

@@ -49,10 +49,12 @@ const Services = () => {
           compassionate team, we strive to deliver personalized care that meets
           your needs and supports your well-being every step of the way.
         </p>
-        <button className="ml-[103px] mt-8 bg-[#8F3E97] text-[17px] 
-   ] text-[#FFFEFD] rounded-[5px] w-[222px] h-[52px]  font-poppins font-medium flex items-center justify-evenly">
-            Book AN Appointment
-          </button>
+        <button
+          className="ml-[103px] mt-8 bg-[#8F3E97] text-[17px] 
+   ] text-[#FFFEFD] rounded-[5px] w-[222px] h-[52px]  font-poppins font-medium flex items-center justify-evenly"
+        >
+          Book AN Appointment
+        </button>
       </div>
     </>
   );
