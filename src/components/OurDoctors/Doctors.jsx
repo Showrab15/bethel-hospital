@@ -169,7 +169,7 @@ M.R.C.O.G (UK)`,
 
   return (
     <div className="px-10 mt-10">
-      <h1 className="md:text-[36px] text-[28px] text-center text-[#496A75] font-yeseva">
+      <h1 className="md:text-[36px] text-[28px] text-center text-[#8F3E97] font-yeseva">
         Our Doctors
       </h1>
       <div className="mx-auto mt-6">

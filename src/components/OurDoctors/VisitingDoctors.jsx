@@ -182,7 +182,7 @@ const VisitingDoctors = () => {
 
   return (
     <div>
-      <h1 className="font-yeseva mt-10 md:mt-20 md:text-[36px] text-[28px] text-center text-[#496A75]">
+      <h1 className="font-yeseva mt-10 md:mt-20 md:text-[36px] text-[28px] text-center text-[#8F3E97]">
         Visiting Doctors
       </h1>
       <div className="mx-auto mt-10 px-10">

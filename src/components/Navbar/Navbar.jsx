@@ -78,7 +78,7 @@ const Navbar = () => {
         <div className="md:flex hidden items-center justify-center p-4">
           <button
             className="mr-20 bg-[#8F3E97] text-[20px] xl:text-[24px]
-   leading-[36px] text-[#FFFEFD] rounded-[10px] w-[222px] h-[52px]  font-poppins font-semibold flex items-center justify-evenly"
+   leading-[36px] text-[#FFFEFD] rounded-[5px] w-[222px] h-[52px]  font-poppins font-semibold flex items-center justify-evenly"
           >
             <img src={callIcon} alt="" /> 0422- 4713822{" "}
           </button>
@@ -115,7 +115,7 @@ const Navbar = () => {
   </button>
 
   {menuOpen && (
-    <div className=" absolute top-36 -left-[400px] right-[80] w-screen bg-[#8f3e97] z-50 shadow-md transition-all duration-300 ease-in-out">
+    <div className=" absolute top-36  right-[0px] w-screen bg-[#8f3e97] z-50 shadow-md transition-all duration-300 ease-in-out">
       <ul className="flex flex-col items-center gap-6 py-8 text-lg font-medium text-white">
         <li>
           <NavLink to="/" className="hover:text-[#8F3E97]" onClick={closeMenu}>
@@ -140,7 +140,8 @@ const Navbar = () => {
         <li>
         <a
   href="tel:"
-  className="cursor-pointer bg-[#8F3E97]/20 border border-white text-white py-2 px-6 rounded-md text-[16px] font-semibold flex items-center gap-2"
+  className="cursor-pointer bg-[#8F3E97]/20 border border-white text-white py-2 px-6
+   rounded-[4px] text-[16px] font-semibold flex items-center gap-2"
 >
   <img src={callIcon} className="w-4 h-4 invert text-white" alt="Call Icon" />
   0422-4713822

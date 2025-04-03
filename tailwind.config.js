@@ -35,7 +35,7 @@ module.exports = {
       },
       animation: {
         // 👇 notice the custom cubic-bezier easing for smooth looping
-        float: 'float 6s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite',
+        float: 'float 6s cubic-bezier(0.225, 0.05, 0.33, 0.55) infinite',
       },
     }
     

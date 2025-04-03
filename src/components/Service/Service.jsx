@@ -190,12 +190,11 @@ import orthopedics from "../../assets/orthopedics-services.png";
 import Paediatrics from "../../assets/Paediatrics-services.png";
 import obstetrics from "../../assets/Obstetrics-Gynecology 1.png";
 import Diabetology from "../../assets/Diabetics_GV 1.png";
-
+import plasticSergery from "../../assets/plasticsergery.png";
 const Service = () => {
   return (
     <div>
       {/* Top Banner with Heading */}
-      
 
       {/* Content */}
       <div className="flex flex-col gap-10 items-center justify-center px-4 md:px-8 lg:px-[50px] py-10">
@@ -203,7 +202,7 @@ const Service = () => {
         {/* Repeat below block with different data */}
 
         {/* Orthopaedics */}
-        <div className="flex flex-col lg:flex-row items-start gap-6 mt-10">
+        <div className="flex flex-col lg:flex-row items-start gap-6 md:mt-10 ">
           <div className="lg:w-6/12">
             <h1 className="text-[#8F3E97] font-bold text-[24px] lg:text-[48px] font-manrope">
               Orthopaedics & Traumatology
@@ -278,23 +277,23 @@ const Service = () => {
               Obstetrics & Gynecology
             </h1>
             <p className="text-[16px] md:text-[18px] lg:text-[22px] text-[#696969] font-manrope mt-4">
-            Our Obstetrics & Gynecology department is committed to providing
-               comprehensive and compassionate care for women at every stage of
-               life. Our team of highly skilled obstetricians, gynecologists, and
-               nurses work together to offer personalized treatment and support,
-               ensuring the health and well-being of our patients
-               <br /> <br />
-               From preconception counseling to postpartum support, we offer
-               complete care for expectant mothers. We provide a full range of
-               gynecologic services, including annual well-woman exams,
-               contraceptive counseling, menopause management, and treatment for
-               gynecologic conditions such as endometriosis, fibroids, and pelvic
-               pain. <br /> <br />
-               Our department is equipped with state-of-the-art technology to
-               perform minimally invasive surgical procedures, such as
-               laparoscopy and hysteroscopy.We work closely with other
-               departments to provide multidisciplinary care and support for our
-               patients.
+              Our Obstetrics & Gynecology department is committed to providing
+              comprehensive and compassionate care for women at every stage of
+              life. Our team of highly skilled obstetricians, gynecologists, and
+              nurses work together to offer personalized treatment and support,
+              ensuring the health and well-being of our patients
+              <br /> <br />
+              From preconception counseling to postpartum support, we offer
+              complete care for expectant mothers. We provide a full range of
+              gynecologic services, including annual well-woman exams,
+              contraceptive counseling, menopause management, and treatment for
+              gynecologic conditions such as endometriosis, fibroids, and pelvic
+              pain. <br /> <br />
+              Our department is equipped with state-of-the-art technology to
+              perform minimally invasive surgical procedures, such as
+              laparoscopy and hysteroscopy.We work closely with other
+              departments to provide multidisciplinary care and support for our
+              patients.
             </p>
           </div>
           <div className="lg:w-6/12">
@@ -314,26 +313,26 @@ const Service = () => {
               Plastic Surgery
             </h1>
             <p className="text-[16px] md:text-[18px] lg:text-[22px] text-[#696969] font-manrope mt-4">
-            Our Plastic Surgery department is dedicated to enhancing your
-               natural beauty and restoring function with precision and care. Our
-               team of board-certified plastic surgeons combines advanced
-               techniques with a compassionate approach to deliver outstanding
-               results tailored to each {`patient's`} unique needs and goals. <br />{" "}
-               <br />
-               Specialized care for conditions affecting the hands, including
-               carpal tunnel syndrome, tendon repairs, and arthritis-related
-               issues, ensuring restored function and improved quality of life.
-               <br /> <br />
-               Our skilled surgeons are experts in reconstructive procedures that
-               restore form and function following trauma, surgery, or congenital
-               conditions. Services include breast reconstruction, cleft lip and
-               palate repair, burn reconstruction, and hand surgery.
+              Our Plastic Surgery department is dedicated to enhancing your
+              natural beauty and restoring function with precision and care. Our
+              team of board-certified plastic surgeons combines advanced
+              techniques with a compassionate approach to deliver outstanding
+              results tailored to each {`patient's`} unique needs and goals.{" "}
+              <br /> <br />
+              Specialized care for conditions affecting the hands, including
+              carpal tunnel syndrome, tendon repairs, and arthritis-related
+              issues, ensuring restored function and improved quality of life.
+              <br /> <br />
+              Our skilled surgeons are experts in reconstructive procedures that
+              restore form and function following trauma, surgery, or congenital
+              conditions. Services include breast reconstruction, cleft lip and
+              palate repair, burn reconstruction, and hand surgery.
             </p>
           </div>
           <div className="lg:w-6/12">
             <hr className="text-[#8F3E97] border-2 border-[#8F3E97] my-6" />
             <img
-              src={Paediatrics}
+              src={plasticSergery}
               className="w-full object-cover"
               alt="Plastic Surgery"
             />
@@ -347,21 +346,21 @@ const Service = () => {
               Diabetology
             </h1>
             <p className="text-[16px] md:text-[18px] lg:text-[22px] text-[#696969] font-manrope mt-4">
-            Our Diabetology department is dedicated to providing comprehensive
-               care for patients with diabetes and related metabolic disorders.
-               Our team of highly skilled diabetologists and specialists is
-               committed to offering personalized treatment plans to manage and
-               control diabetes effectively, ensuring a better quality of life
-               for our patients.
-               <br /> <br />
-               We offer individualized treatment plans tailored to the specific
-               needs of each patient, including lifestyle modifications,
-               medication management, and regular monitoring of blood glucose
-               levels.
-               <br /> <br />
-               Specialized care and support for patients with both Type 1 and
-               Type 2 diabetes, including education on self-management techniques
-               and prevention strategies.
+              Our Diabetology department is dedicated to providing comprehensive
+              care for patients with diabetes and related metabolic disorders.
+              Our team of highly skilled diabetologists and specialists is
+              committed to offering personalized treatment plans to manage and
+              control diabetes effectively, ensuring a better quality of life
+              for our patients.
+              <br /> <br />
+              We offer individualized treatment plans tailored to the specific
+              needs of each patient, including lifestyle modifications,
+              medication management, and regular monitoring of blood glucose
+              levels.
+              <br /> <br />
+              Specialized care and support for patients with both Type 1 and
+              Type 2 diabetes, including education on self-management techniques
+              and prevention strategies.
             </p>
           </div>
           <div className="lg:w-6/12">
@@ -370,6 +369,32 @@ const Service = () => {
               src={Diabetology}
               className="w-full object-cover"
               alt="Diabetology"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row-reverse items-start gap-6 mt-10">
+          <div className="lg:w-6/12">
+            <h1 className="text-[#8F3E97] font-bold text-[24px] lg:text-[48px] font-manrope">
+              Physiotherapy
+            </h1>
+            <p className="text-[16px] md:text-[18px] lg:text-[22px] text-[#696969] font-manrope mt-4">
+              <strong>Physiotheraphy -Orthopedics</strong> <br /> The Physical Theraphy is very
+              important to manage majority of ailments Orthopaedic surgery,
+              Allergic Lung Disease, Neurological problems and Prolonged bed
+              rest. The Physiotheraphy department has got all the modalities
+              including Laser therapy in addition to Traction, Heat therapy,
+              Massages and exercise therapy. <br /> <br />   <strong>Physiotheraphy - Obstetrics</strong> <br /> Antenatal exercises are being taught regularly to the expectant
+              mothers by an experienced Obstetrics Physiotherapist. Guidance is
+              provided with regards to post natal physical care.
+            </p>
+          </div>
+          <div className="lg:w-6/12">
+            <hr className="text-[#8F3E97] border-2 border-[#8F3E97] my-6" />
+            <img
+              src={plasticSergery}
+              className="w-full object-cover"
+              alt="Plastic Surgery"
             />
           </div>
         </div>

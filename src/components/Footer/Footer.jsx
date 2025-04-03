@@ -15,7 +15,7 @@
 //           {/* Important links */}
 //           <div className="-ml-10">
 //             {" "}
-//             <h2 className="text-[#BFD2F8] text-[18px] font-semibold font-poppins mt-2">
+//             <h2 className="text-white text-[18px] font-semibold font-poppins mt-2">
 //               Important Links
 //             </h2>
 //             <ul className="text-[16px] font-normal text-[#FCFEFE] mt-4 space-y-2">
@@ -36,7 +36,7 @@
 //           {/* Contact US */}
 //           <div className="-ml-20">
 //             {" "}
-//             <h2 className="text-[#BFD2F8] text-[18px] font-semibold font-poppins mt-2">
+//             <h2 className="text-white text-[18px] font-semibold font-poppins mt-2">
 //               Contact Us
 //             </h2>
 //             <ul className="text-[16px] font-normal text-[#FCFEFE] mt-4 space-y-2">
@@ -55,7 +55,7 @@
 //           {/* Newsletter */}
 //           <div>
 //             {" "}
-//             <h2 className="text-[#BFD2F8] text-[18px] font-semibold font-poppins mt-2">
+//             <h2 className="text-white text-[18px] font-semibold font-poppins mt-2">
 //               Newsletter
 //             </h2>
 //             <div className="flex items-center bg-purple-200 text-purple-900 rounded-md px-3 py-2 w-full max-w-md">
@@ -77,7 +77,7 @@
 //             </div>
 //           </div>
 //         </div>
-//         <hr className="mt-10 text-[#BFD2F8]" />
+//         <hr className="mt-10 text-white" />
 //         <div className="flex my-4">
 //                   {/* copyright */}
 
@@ -87,17 +87,16 @@
 
 //           {/* social icons */}
 //           <ul className="justify-end ml-auto flex gap-4 cursor-help">
-//   <li className="bg-[#BFD2F8] rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+//   <li className="bg-white rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
 //     <FaLinkedinIn className="text-[#8F3E97] transition duration-300" />
 //   </li>
-//   <li className="bg-[#BFD2F8] rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+//   <li className="bg-white rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
 //     <FaFacebookF className="text-[#8F3E97] transition duration-300" />
 //   </li>
-//   <li className="bg-[#BFD2F8] rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+//   <li className="bg-white rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
 //     <FaInstagram className="text-[#8F3E97] transition duration-300" />
 //   </li>
 // </ul>
-
 
 //         </div>
 //       </div>
@@ -107,28 +106,26 @@
 
 // export default Footer;
 
-
-
-
-
-
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
-import logo from "../../assets/bethel-hospital.png";
-import {  NavLink } from "react-router-dom";
+import logo from "../../assets/footerLogo.png";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className=" px-4 md:px-8 lg:px-16 mt-20">
-      <div className="bg-[#8F3E97] px-6 md:px-10 lg:px-[100px] py-10 md:py-16 lg:py-[80px] mx-auto">
+    <div className="mt-20">
+      <div className="bg-[#8F3E97] px-6 md:px-10 lg:px-[60px] py-10 md:py-16 lg:py-[80px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo */}
-          <div>
-            <img src={logo} alt="Bethel Hospital" className="w-40 md:w-40" />
+          <div className="flex items-start gap-4">
+            <img src={logo} alt="Bethel Hospital" className="w-[100px] md:w-32" />
+            <h2 className="text-white text-[20px] font-semibold font-poppins mt-12 w-[260px] whitespace-nowrap">
+              Bethel Hospital
+            </h2>
           </div>
 
           {/* Important links */}
-          <div>
-            <h2 className="text-[#BFD2F8] text-[18px] font-semibold font-poppins mt-2">
+          <div className="md:ml-10">
+            <h2 className="text-white text-[18px] font-semibold font-poppins mt-2">
               Important Links
             </h2>
             <ul className="text-[16px] font-normal text-[#FCFEFE] mt-4 space-y-2">
@@ -147,7 +144,7 @@ const Footer = () => {
 
           {/* Contact Us */}
           <div>
-            <h2 className="md:-ml-10 text-[#BFD2F8] text-[18px] font-semibold font-poppins mt-2">
+            <h2 className="md:-ml-10  text-white text-[18px] font-semibold font-poppins mt-2">
               Contact Us
             </h2>
             <ul className="md:-ml-10 text-[16px] font-normal text-[#FCFEFE] mt-4 space-y-2">
@@ -166,7 +163,7 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div>
-            <h2 className="text-[#BFD2F8] text-[18px] font-semibold font-poppins mt-2">
+            <h2 className="text-white text-[18px] font-semibold font-poppins mt-2">
               Newsletter
             </h2>
             <div className="flex items-center bg-purple-200 text-purple-900 rounded-md px-3 py-2 w-full max-w-md mt-4">
@@ -187,26 +184,28 @@ const Footer = () => {
               </button>
             </div>
           </div>
+          
         </div>
 
         {/* Divider */}
-        <hr className="mt-10 border-[#BFD2F8]" />
+        <hr className="mt-10 border-white" />
 
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between mt-4 gap-4">
           <p className="text-[#FCFEFE] text-center md:text-left text-sm">
-            © 2021 Hospital’s name. All Rights Reserved by PNTEC-LTD
+            © {new Date().getFullYear()} Bethel Hospital. All Rights Reserved by
+            Creative Lance
           </p>
 
           {/* Social Icons */}
           <ul className="flex gap-4 cursor-pointer">
-            <li className="bg-[#BFD2F8] rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+            <li className="bg-white rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
               <FaLinkedinIn className="text-[#8F3E97] transition duration-300" />
             </li>
-            <li className="bg-[#BFD2F8] rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+            <li className="bg-white rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
               <FaFacebookF className="text-[#8F3E97] transition duration-300" />
             </li>
-            <li className="bg-[#BFD2F8] rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
+            <li className="bg-white rounded-full p-2 transition duration-300 hover:shadow-lg hover:-translate-y-1">
               <FaInstagram className="text-[#8F3E97] transition duration-300" />
             </li>
           </ul>
