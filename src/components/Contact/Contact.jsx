@@ -87,22 +87,22 @@
 
 import callIcon from "../../assets/Ringer_Volume.png";
 import callIconWhite from "../../assets/Ringer Volume_white.png";
-import locationIcon from "../../assets/location.png";
+import locationIcon from "../../assets/location-icon.png";
 import locationIconWhite from "../../assets/Location_white.png";
-import clockIcon from "../../assets/Ringer_Volume.png";
-import clockIconWhite from "../../assets/Ringer Volume_white.png";
+import clockIcon from "../../assets/clock-icon-pink.png";
+import clockIconWhite from "../../assets/clock-icon.png";
 import emailIcon from "../../assets/email.png";
-import emailIconWhite from "../../assets/LetterIcon_white.png";
+import emailIconWhite from "../../assets/email-icon-white.png";
+import PlacePicker from "./PlacePicker";
+import MapWithPlacePicker from "./MapWithPlacePicker";
 
 const Contact = () => {
   return (
     <div className="mt-10 px-4 md:px-8 lg:px-16">
-      <h2 className="text-[#159EEC] font-bold text-[18px] text-center">
+      <h2 className="text-[#8F3E97] font-medium text-[36px] text-center font-yeseva ">
         Get in touch
       </h2>
-      <h3 className="text-[#8F3E97] font-regular font-poppins text-[28px] md:text-[32px] text-center">
-        Contact
-      </h3>
+      
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 place-items-center">
         {[
@@ -136,7 +136,9 @@ const Contact = () => {
         ].map((item, index) => (
           <div
             key={index}
-            className="bg-[#DDDDDD] hover:bg-[#8F3E97] group rounded-[5px] w-full max-w-[280px] h-[245px] flex flex-col justify-center items-center transition-all duration-300"
+            className="transform transition-transform duration-300 hover:scale-90 bg-[#DDDDDD]
+             hover:bg-[#8F3E97] group rounded-[5px] w-full max-w-[280px] h-[245px] flex flex-col 
+             justify-center items-center transition-all duration-300"
           >
             {/* Image Swap on Hover */}
             <img
@@ -146,7 +148,7 @@ const Contact = () => {
             />
             <img
               src={item.hoverIcon}
-              className="hidden group-hover:block w-10 h-10"
+              className="hidden group-hover:block w-10 h-8"
               alt=""
             />
 
@@ -165,6 +167,8 @@ const Contact = () => {
           </div>
         ))}
       </div>
+      <PlacePicker />
+      <MapWithPlacePicker />
     </div>
   );
 };

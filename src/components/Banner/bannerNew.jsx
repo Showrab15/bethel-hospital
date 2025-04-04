@@ -86,7 +86,7 @@ const BannerNew = () => {
             className="mt-8 bg-[#8F3E97] text-[16px] text-[#FFFEFD] rounded-[5px] w-[180px] md:w-[222px] h-[48px] md:h-[52px] font-poppins font-medium flex items-center justify-center 
               transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
           >
-            Book AN Appointment
+          Book an Appointment
           </button>
         </div>
 

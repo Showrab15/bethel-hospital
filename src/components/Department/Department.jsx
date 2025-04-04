@@ -150,7 +150,6 @@ import PlasticSurgery from "../../assets/plastic surgery 1.png";
 import Paediatrics from "../../assets/Paediatrics   1.png";
 import daibatology from "../../assets/daibatology 1.png";
 import rightarrow from "../../assets/rightarrow.png";
-import { FaAngleRight } from "react-icons/fa";
 
 const Department = () => {
   const items = [
@@ -206,7 +205,7 @@ const Department = () => {
     <div className="md:mt-40 mt-10 px-4 md:px-[50px] mx-auto">
       <div className="flex flex-col md:justify-center">
         <p className="text-[26px] leading-[20px] font-bold font-manrope text-[#8F3E97] text-center">
-          Department
+        Departments
         </p>
         <h5 className="text-center md:text-center my-3 md:w-full w-full text-[22px] md:text-[48px] leading-[30px] md:leading-[51px] font-bold font-manrope text-[#121212]">
           We offer a comprehensive coverage of more{" "}
@@ -250,17 +249,10 @@ const Department = () => {
                 >
                   {item.title}
                 </div>
-                <div className="mt-2 items-start justify-start text-[16px] leading-[30px] font-normal font-manrope text-white text-left group-hover:flex hidden">
+                <div className="text-center mt-2 items-start justify-start text-[16px] leading-[30px] font-normal font-manrope text-white  group-hover:flex hidden">
                   {item.description}
                 </div>
-                <div className="group-hover:flex hidden ml-auto gap-2 items-center">
-                  <span className="text-white text-[10px] mt-4 items-center justify-center font-normal">
-                    Know More
-                  </span>
-                  <span className="text-center mt-4 group-hover:flex items-center justify-center bg-white w-[30px] h-[30px] rounded-[16px] font-semibold">
-                    <FaAngleRight />
-                  </span>
-                </div>
+               
               </div>
             ))}
         </div>

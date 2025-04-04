@@ -79,9 +79,7 @@ const AboutUs = () => {
                   src={img}
                   alt="Image"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500 flex items-center justify-center text-white font-bold opacity-0 group-hover:opacity-100">
-                  View More
-                </div>
+               
               </motion.div>
             ))}
           </motion.div>
@@ -115,9 +113,7 @@ const AboutUs = () => {
                   src={img}
                   alt="Image"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500 flex items-center justify-center text-white font-bold opacity-0 group-hover:opacity-100">
-                  View More
-                </div>
+               
               </motion.div>
             ))}
           </motion.div>
@@ -220,9 +216,7 @@ const AboutUs = () => {
                   src={img}
                   alt="Image"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500 flex items-center justify-center text-white font-bold opacity-0 group-hover:opacity-100">
-                  View More
-                </div>
+               
               </motion.div>
             ))}
           </motion.div>
@@ -257,9 +251,7 @@ const AboutUs = () => {
                   src={img}
                   alt="Image"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500 flex items-center justify-center text-white font-bold opacity-0 group-hover:opacity-100">
-                  View More
-                </div>
+               
               </motion.div>
             ))}
           </motion.div>
@@ -363,9 +355,7 @@ const AboutUs = () => {
                   src={img}
                   alt="Image"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500 flex items-center justify-center text-white font-bold opacity-0 group-hover:opacity-100">
-                  View More
-                </div>
+               
               </motion.div>
             ))}
           </motion.div>

@@ -138,12 +138,18 @@ const Doctors = () => {
       role: "M.Ch (Plastic Surgery)",
       image: doctor1,
     },
-    { id: 2, name: "Dr JayaPrakash", role: " D.Ortho", image: doctor2 },
-    { id: 3, name: "Dr.Sujatha", role: "MS (Ortho)., D Ortho", image: doctor3 },
+    { id: 2, name: "Dr JayaPrakash", 
+      role: " D.Ortho", 
+      image: doctor2
+     },
+    { id: 3, name: "Dr.Sujatha",
+       role: "M.D",
+        image: doctor3
+       },
     {
       id: 4,
       name: "Dr Samuel Anantharaj",
-      role: "MS (Ortho)., M.R.C.S. (Edin)",
+      role: "MS (Ortho), M.R.C.S. (Edin)",
       image: doctor4,
     },
     {

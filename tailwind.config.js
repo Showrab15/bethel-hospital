@@ -24,7 +24,7 @@ module.exports = {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         manrope: ['Manrope', 'sans-serif'],
-        yeseva: ['Yeseva', 'sans-serif'],
+        yeseva: ['Yeseva One', 'sans-serif'],
       },
       keyframes: {
         float: {
