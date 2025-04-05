@@ -149,7 +149,7 @@ import Obstetrics from "../../assets/Obstetrics.png";
 import PlasticSurgery from "../../assets/plastic surgery 1.png";
 import Paediatrics from "../../assets/Paediatrics   1.png";
 import daibatology from "../../assets/daibatology 1.png";
-import rightarrow from "../../assets/rightarrow.png";
+import rightarrow from "../../assets/rightarrow (2).png";
 
 const Department = () => {
   const items = [
@@ -169,17 +169,17 @@ const Department = () => {
     {
       title: "Paediatrics",
       description:
-        "Our Plastic Surgery department is committed to delivering the highest standard of care in reconstructive and cosmetic surgery.",
+        "Our Pediatrics department is dedicated to providing exceptional medical care for infants, children, and adolescents.",
       image: `${Paediatrics}`,
     },
     {
       title: "Plastic Surgery",
       description:
-        "Our Pediatrics department is dedicated to providing exceptional medical care for infants, children, and adolescents.",
+        "Our Plastic Surgery department is committed to delivering the highest standard of care in reconstructive and cosmetic surgery.",
       image: `${PlasticSurgery}`,
     },
     {
-      title: "daibatology",
+      title: "Diabetology",
       image: `${daibatology}`,
       description:
         "Our Diabetology department is dedicated to providing comprehensive care for individuals with diabetes and related metabolic disorders.",
@@ -207,7 +207,8 @@ const Department = () => {
         <p className="text-[26px] leading-[20px] font-bold font-manrope text-[#8F3E97] text-center">
         Departments
         </p>
-        <h5 className="text-center md:text-center my-3 md:w-full w-full text-[22px] md:text-[48px] leading-[30px] md:leading-[51px] font-bold font-manrope text-[#121212]">
+        <h5 className="text-center md:text-center my-3 md:w-full w-full text-[22px] md:text-[48px] leading-[30px]
+         md:leading-[51px] font-semibold font-manrope text-[#121212]">
           We offer a comprehensive coverage of more{" "}
           <br className="hidden md:block" /> than 80+ medical tests with
           reliable results
@@ -218,12 +219,12 @@ const Department = () => {
         {/* Left Arrow */}
         <button
           onClick={handlePrev}
-          className={`p-2 md:p-3 flex items-center justify-center text-center rounded-full bg-[#8F3E97] text-white ${
+          className={`p-2 md:p-3 flex items-center justify-center text-center rounded-full bg-white text-white ${
             startIndex === 0 ? "cursor-not-allowed" : ""
           }`}
           disabled={startIndex === 0}
         >
-          <img className="rotate-180 w-4 h-4 md:w-5 md:h-5" src={rightarrow} alt="" />
+          <img className="rotate-180 w-4 h-4 md:w-[35px] md:h-[70px]" src={rightarrow} alt="" />
         </button>
 
         {/* Carousel Items */}
@@ -233,7 +234,8 @@ const Department = () => {
             .map((item, index) => (
               <div
                 key={index}
-                className="group hover:cursor-pointer transform hover:scale-105 transition duration-300 hover:bg-[#8F3E97] hover:rounded-bl-[10px] hover:rounded-br-[10px] font-manrope w-full md:w-[331.92px] h-auto min-h-[300px] p-4 bg-white shadow-md border border-t-4 border-t-[#8F3E97] flex flex-col items-center justify-center text-center"
+                className="group hover:cursor-pointer transform hover:scale-105 transition duration-300
+                 hover:bg-[#8F3E97] hover:rounded-bl-[10px] hover:rounded-br-[10px] font-manrope w-full md:w-[331.92px] h-auto min-h-[250px] p-4 bg-white shadow-md border border-t-4 border-t-[#8F3E97] flex flex-col items-center justify-center text-center"
               >
                 <img
                   src={item.image}
@@ -260,12 +262,12 @@ const Department = () => {
         {/* Right Arrow */}
         <button
           onClick={handleNext}
-          className={`p-2 md:p-3 flex items-center justify-center text-center rounded-full bg-[#8F3E97] text-white ${
+          className={`p-2 md:p-3 flex items-center justify-center text-center rounded-full bg-white text-white ${
             startIndex + visibleItems >= items.length ? "cursor-not-allowed" : ""
           }`}
           disabled={startIndex + visibleItems >= items.length}
         >
-          <img className="w-4 h-4 md:w-5 md:h-5" src={rightarrow} alt="rightarrow" />
+          <img className="w-4 h-4 md:w-[35px] md:h-[70px]" src={rightarrow} alt="rightarrow" />
         </button>
       </div>
     </div>

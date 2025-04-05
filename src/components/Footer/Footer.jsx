@@ -129,8 +129,9 @@ const Footer = () => {
               Important Links
             </h2>
             <ul className="text-[16px] font-normal text-[#FCFEFE] mt-4 space-y-2">
-              <li>Appointment</li>
-              <li>
+            <li>
+                <NavLink to="/">Home</NavLink>
+              </li>              <li>
                 <NavLink to="/our-doctors">Doctors</NavLink>
               </li>
               <li>
@@ -152,7 +153,9 @@ const Footer = () => {
                 <strong>Call</strong>: 0422-2499009 / 0422-2499339
               </li>
               <li>
-                <strong>Email</strong>: bethel@yahoo.com
+                <strong>Email</strong>: bethelhospital2006@gmail.com
+
+
               </li>
               <li>
                 <strong>Address</strong>: 223, Dr Rajendra Prasad Rd, Tatabad,
@@ -192,9 +195,9 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="flex flex-col md:flex-row items-center justify-between mt-4 gap-4">
-          <p className="text-[#FCFEFE] text-center md:text-left text-sm">
-            © {new Date().getFullYear()} Bethel Hospital. All Rights Reserved by
-            Creative Lance
+          <p className="text-[#FCFEFE] text-center md:text-left text-sm md:flex gap-2 ">
+            © {new Date().getFullYear()} Bethel Hospital. All Rights Reserved by <br className="md:hidden block" />
+            <a  href="https://www.linkedin.com/company/creative-lance" target="_blank" rel="noopener noreferrer">Creative Lance</a>
           </p>
 
           {/* Social Icons */}

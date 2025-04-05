@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
+import BackToTopbtn from "../components/BackToTopbtn/BackToTopbtn";
 
 const MainLayOut = () => {
     const location = useLocation();
@@ -11,6 +12,8 @@ const MainLayOut = () => {
             {!isHome && <Navbar />}
             <Outlet />
             <Footer />
+            <BackToTopbtn/>
+
         </>
     );
 };

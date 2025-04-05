@@ -35,8 +35,8 @@ const Banner = () => {
     >
       {/* Center Text */}
       <div className="absolute inset-0 flex items-center justify-center px-4">
-        <p className=" text-right text-[10px] sm:text-[22px] md:text-[24px] font-semibold font-manrope text-white 
-          md:w-[85%] lg:w-[75%] mt-8 sm:mt-16 md:mt-40 md:-mr-[200px] ml-[124px] md:ml-0">
+        <p className=" text-right text-[8px] sm:text-[22px] md:text-[24px] font-semibold font-manrope text-white 
+          md:w-[85%] lg:w-[75%] mt-[46px] sm:mt-16 md:mt-40 md:-mr-[200px] ml-[124px] md:ml-0">
           This emphasizes both the quality of the care provided and <br className="" />
           <span className="  sm:ml-[20px] lg:ml-[68px] text-left sm:text-right">
             the trust patients can have in our hospital’s services

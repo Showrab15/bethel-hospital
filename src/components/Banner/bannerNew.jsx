@@ -62,6 +62,8 @@ import curveBackground from "../../assets/curve1.png"; // Replace with the path 
 import home from "../../assets/Group 500.png";
 import home2 from "../../assets/rectangle2.png";
 import Navbar from "./../Navbar/Navbar";
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BannerNew = () => {
   return (
@@ -74,20 +76,22 @@ const BannerNew = () => {
         
         {/* Left Text */}
         <div className="mt-10 ml-[20px] md:ml-[50px] px-4 md:px-0">
-          <h3 className="text-[#8F3E97] text-lg sm:text-2xl md:text-[35px] font-bold leading-snug md:leading-normal font-manrope text-left">
+          <h1 className="text-[#8F3E97] text-lg sm:text-2xl md:text-[35px] font-bold leading-snug md:leading-normal font-manrope text-left">
             We are dedicated to <br /> providing exceptional <br />
             <span>healthcare to you and your family.</span>
-          </h3>
+          </h1>
           <p className="mt-4 text-[#8F3E97] font-manrope text-base sm:text-[16px] md:text-[18px] max-w-[620px]">
             With state-of-the-art medical technology, expert doctors, and a compassionate team, we strive to deliver personalized care that meets your needs and supports your well-being every step of the way.
           </p>
 
-          <button
+          <Link
+           to="/services"
             className="mt-8 bg-[#8F3E97] text-[16px] text-[#FFFEFD] rounded-[5px] w-[180px] md:w-[222px] h-[48px] md:h-[52px] font-poppins font-medium flex items-center justify-center 
               transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg"
           >
-          Book an Appointment
-          </button>
+        Explore More <FaArrowRight className="ml-4"/>
+
+          </Link>
         </div>
 
         {/* Images */}

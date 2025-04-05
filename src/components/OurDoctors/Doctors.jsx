@@ -87,7 +87,6 @@
 //           ))}
 //         </div>
 
-
 //         {/* /last two  */}
 
 //         <div className="md:mt-20 mt-6 md:flex-row flex-col flex  gap-6 md:gap-20 justify-evenly">
@@ -109,7 +108,6 @@
 //           ))}
 //         </div>
 
-
 //       </div>
 //     </div>
 //   );
@@ -117,12 +115,7 @@
 
 // export default Doctors;
 
-
-
-
-
-
-import doctor1 from "../../assets/doctor1.png";
+import doctor1 from "../../assets/rsz_doctor_.png";
 import doctor2 from "../../assets/doctor2.png";
 import doctor3 from "../../assets/doctor3.png";
 import doctor4 from "../../assets/doctor4.png";
@@ -134,42 +127,36 @@ const Doctors = () => {
   const foundersData = [
     {
       id: 1,
-      name: "Dr.Namachivayam",
-      role: "M.Ch (Plastic Surgery)",
+      name: "Dr. Govindaraj",
+      role: "MBBS MS",
       image: doctor1,
     },
-    { id: 2, name: "Dr JayaPrakash", 
-      role: " D.Ortho", 
-      image: doctor2
-     },
-    { id: 3, name: "Dr.Sujatha",
-       role: "M.D",
-        image: doctor3
-       },
+    { id: 2, name: "Dr. JayaPrakash", role: " D.Ortho", image: doctor2 },
+    { id: 3, name: "Dr. Sujatha", role: "M.D", image: doctor3 },
     {
       id: 4,
-      name: "Dr Samuel Anantharaj",
-      role: "MS (Ortho), M.R.C.S. (Edin)",
-      image: doctor4,
-    },
-    {
-      id: 5,
-      name: "Dr Rebecca Ranjini",
-      role: `D.N.B (Obg & Gyn)
-M.R.C.O.G (UK)`,
-      image: doctor5,
-    },
-    {
-      id: 6,
-      name: "Dr.Nirupa Daya",
-      role: `MS (Ortho)., D Ortho`,
+      name: "Dr. Nirupa Daya",
+      role: `MD(OG) PGDFM consultant at fetovision `,
       image: doctor6,
     },
     {
-      id: 7,
-      name: "Dr.Dayanand Jairaj",
+      id: 5,
+      name: "Dr. Dayanand Jairaj",
       role: `M.Ch (Plastic Surgery)`,
       image: doctor7,
+    },
+    {
+      id: 6,
+      name: "Dr. Samuel Anantharaj",
+      role: "MS (Ortho)., M.R.C.S. (UK)",
+      image: doctor4,
+    },
+    {
+      id: 7,
+      name: "Dr. Rebecca Ranjini",
+      role: `D.N.B (Obg & Gyn)
+M.R.C.O.G (UK)`,
+      image: doctor5,
     },
   ];
 
@@ -229,7 +216,9 @@ M.R.C.O.G (UK)`,
               <img
                 src={founder.image}
                 alt={`Founder ${index + 1}`}
-                className={`w-full filter grayscale group-hover:grayscale-0 transition-all duration-300 ${founder.id === 7 ? 'top-2 relative' : ''}`}
+                className={`w-full filter grayscale group-hover:grayscale-0 transition-all duration-300 ${
+                  founder.id === 7 ? "top-2 relative" : ""
+                }`}
               />
               <div className="absolute bottom-0 left-0 right-0 bg-[#8F3E97] bg-opacity-70 text-white text-center p-6 transform translate-y-full group-hover:translate-y-0 transition-all duration-300">
                 <h2 className="text-lg font-semibold">{founder.name}</h2>

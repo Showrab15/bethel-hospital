@@ -102,6 +102,7 @@
 import { useState } from "react";
 import testimonial1 from "../../assets/testimonial1.png";
 import rightArrow from "../../assets/long_right.png";
+import { FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
@@ -162,16 +163,22 @@ const Testimonial = () => {
               key={testimonial.id}
               className="min-w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-[100px] bg-[#8F3E9742] py-10 px-6 md:px-12"
             >
-              <img
+              {/* <img
                 src={testimonial.image}
                 alt="testimonial"
                 className="w-32 h-32 md:w-48 md:h-48 object-contain"
-              />
-              <div className="text-left max-w-xl">
-                <p className="text-base md:text-lg lg:text-[22px] leading-relaxed text-[#121212]">
+              /> */}
+              <div className="text-center max-w-xl">
+                <p className="text-[12px] sm:text-base md:text-lg lg:text-[22px] leading-relaxed text-[#121212]">
                   {testimonial.text}
                 </p>
                 <h6 className="font-semibold text-[18px] mt-4">{testimonial.author}</h6>
+                <div className="flex gap-3 mx-auto justify-center py-2 text-[#8F3E97]"><FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                </div>
               </div>
             </div>
           ))}

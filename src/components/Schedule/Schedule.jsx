@@ -82,8 +82,9 @@ const Schedule = () => {
         </ul>
 
         <div>
-          <button className="mt-6 bg-[#8F3E97] text-white text-[16px] md:text-[18px] rounded-[10px] w-full md:w-[257px] h-[52px] font-manrope font-medium flex items-center justify-center   transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
-          Make a Schedule Now
+          <button className="mt-6 bg-[#8F3E97] text-white text-[16px] md:text-[18px] rounded-[10px] w-full md:w-[157px] h-[52px] font-manrope font-medium flex items-center justify-center   transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+           Call Now 
+
           </button>
         </div>
       </div>

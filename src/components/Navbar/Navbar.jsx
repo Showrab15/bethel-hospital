@@ -36,7 +36,7 @@ const Navbar = () => {
               to="/"
               aria-label="Home"
               className={({ isActive }) =>
-                isActive ? "text-[#8F3E97] hover:text-[#000000AB]" : "hover:text-[#8F3E97]"
+                isActive ? "text-[#8F3E97] border-b-2 border-[#8F3E97] hover:text-[#000000AB]" : "hover:text-[#8F3E97]"
               }            >
               Home
             </NavLink>
@@ -47,7 +47,7 @@ const Navbar = () => {
               to="/services"
               aria-label="Services"
               className={({ isActive }) =>
-                isActive ? "text-[#8F3E97] hover:text-[#000000AB]" : "hover:text-[#8F3E97]"
+                isActive ? "text-[#8F3E97] hover:text-[#000000AB] border-b-2 border-[#8F3E97]" : "hover:text-[#8F3E97]"
               }
             >            
               Services
@@ -60,7 +60,7 @@ const Navbar = () => {
               to="/our-doctors"
               aria-label="Our Doctors"
               className={({ isActive }) =>
-                isActive ? "text-[#8F3E97] hover:text-[#000000AB]" : "hover:text-[#8F3E97]"
+                isActive ? "text-[#8F3E97] hover:text-[#000000AB] border-b-2 border-[#8F3E97]" : "hover:text-[#8F3E97]"
               }            >
               Our Doctors
             </NavLink>
@@ -71,7 +71,7 @@ const Navbar = () => {
               to="/about"
               aria-label="About"
               className={({ isActive }) =>
-                isActive ? "text-[#8F3E97] hover:text-[#000000AB]" : "hover:text-[#8F3E97]"
+                isActive ? "text-[#8F3E97] hover:text-[#000000AB] border-b-2 border-[#8F3E97]" : "hover:text-[#8F3E97]"
               }            >
               About Us
             </NavLink>
@@ -124,28 +124,28 @@ const Navbar = () => {
       <ul className="flex flex-col items-center gap-6 py-8 text-lg font-medium text-white">
         <li>
           <NavLink to="/"  className={({ isActive }) =>
-                isActive ? "text-[#8F3E97] hover:text-[#000000AB]" : "hover:text-[#8F3E97]"
+                isActive ? "text-[#8F3E97] hover:text-[#000000AB] border-b-2 border-[#8F3E97]" : "hover:text-[#8F3E97]"
               } onClick={closeMenu}>
             Home
           </NavLink>
         </li>
         <li>
           <NavLink to="/services"  className={({ isActive }) =>
-                isActive ? "text-[#8F3E97] hover:text-[#000000AB]" : "hover:text-[#8F3E97]"
+                isActive ? "text-[#8F3E97] hover:text-[#000000AB] border-b-2 border-[#8F3E97]" : "hover:text-[#8F3E97]"
               } onClick={closeMenu}>
             Services
           </NavLink>
         </li>
         <li>
           <NavLink to="/our-doctors"  className={({ isActive }) =>
-                isActive ? "text-[#8F3E97] hover:text-[#000000AB]" : "hover:text-[#8F3E97]"
+                isActive ? "text-[#8F3E97] hover:text-[#000000AB] border-b-2 border-[#8F3E97]" : "hover:text-[#8F3E97]"
               } onClick={closeMenu}>
             Our Doctors
           </NavLink>
         </li>
         <li>
           <NavLink to="/about"  className={({ isActive }) =>
-                isActive ? "text-[#8F3E97] hover:text-[#000000AB]" : "hover:text-[#8F3E97]"
+                isActive ? "text-[#8F3E97] hover:text-[#000000AB] border-b-2 border-[#8F3E97]" : "hover:text-[#8F3E97]"
               } onClick={closeMenu}>
             About Us
           </NavLink>

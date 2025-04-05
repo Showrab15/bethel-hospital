@@ -36,8 +36,8 @@ import founder2 from "../../assets/founder2.png";
 const Founders = () => {
 
     const foundersData = [
-                 { id: 1, name: "Dr Rajapandian", role: "MS (Ortho), D Ortho", image: founder1 },
-                 { id: 2, name: "Dr Sheela Rajapandian", role: "M.D D.G.O", image: founder2 },
+                 { id: 1, name: "Dr. Rajapandian", role: "MS (Ortho), D Ortho", image: founder1 },
+                 { id: 2, name: "Dr. Sheela Rajapandian", role: "M.D D.G.O", image: founder2 },
                ];
   return (
     <div>
