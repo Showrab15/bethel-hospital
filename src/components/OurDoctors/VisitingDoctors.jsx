@@ -162,7 +162,7 @@ const VisitingDoctors = () => {
       id: 6,
       name: "Dr. Karthikeyan",
       role: "DA",
-      role2: "ANAESTHATIST",
+      role2: "ANAESTHETIST",
       image: visitingDoctor,
     },
     {

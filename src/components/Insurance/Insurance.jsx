@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // import { useState } from "react";
 // import { CheckCircle, XCircle } from "lucide-react";
 
@@ -84,7 +78,6 @@
 //   Tamil Nadu Government New Health Insurance Scheme <br /> For Pensioners
 // </h3>
 
-
 //         <div className="flex flex-col lg:flex-row gap-6 mt-10 justify-center items-center">
 //           {/* Selected Company Name */}
 //           <h6 className=" font-bold text-base md:text-lg text-center lg:text-left min-w-[200px]">
@@ -125,7 +118,7 @@
 //       </div>
 //     </div>
 //     </div>
-   
+
 //   );
 // };
 
@@ -141,7 +134,10 @@ const insuranceCompanies = [
   { name: "MEDSAVE HEALTH CARE (TPA) PRIVATE LTD", eligible: true },
   { name: "MD INDIA HEALTHCARE SERVICES (TPA) PRIVATE LTD", eligible: true },
   { name: "RAKSHA HEALTH INSURANCE TPA PVT. LTD", eligible: true },
-  { name: "MEDVANTAGE INSURANCE TPA (FORMERLY UNITED HEALTH CARE)", eligible: true },
+  {
+    name: "MEDVANTAGE INSURANCE TPA (FORMERLY UNITED HEALTH CARE)",
+    eligible: true,
+  },
   { name: "VIDAL HEALTHCARE INSURANCE (TPA) PRIVATE LTD", eligible: true },
   { name: "VIPUI. MEDCORP PVT LTD.", eligible: true },
   { name: "PARAMOUNT HEALTH SERVICE & INSURANCE TPA PVT. LTD", eligible: true },
@@ -225,8 +221,11 @@ const Insurance = () => {
     <div className="px-4 md:px-8 lg:px-16 mt-10">
       <div className="bg-white text-[#8F3E97] w-full px-4 md:px-6 py-10 md:py-[81px] ">
         <div className="max-w-7xl mx-auto">
-          <h3 className="font-manrope font-medium text-xl md:text-2xl lg:text-[30px] text-center leading-snug">
+          {/* <h3 className="font-manrope font-medium text-xl md:text-2xl lg:text-[30px] text-center leading-snug">
             Tamil Nadu Government New Health Insurance Scheme <br /> For Pensioners
+          </h3> */}
+          <h3 className="font-manrope font-semibold text-xl md:text-2xl lg:text-[30px] text-center leading-snug">
+          Our Insurance policies
           </h3>
 
           <div className="flex flex-col lg:flex-row gap-6 mt-10 justify-center items-center">

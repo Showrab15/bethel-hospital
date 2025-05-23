@@ -82,12 +82,11 @@
 
 import callIcon from "../../assets/Ringer_Volume.png";
 import callIconWhite from "../../assets/Ringer Volume_white.png";
-import locationIcon from "../../assets/location-icon.png";
-import locationIconWhite from "../../assets/Location_white.png";
 import clockIcon from "../../assets/clock-icon-pink.png";
 import clockIconWhite from "../../assets/clock-icon.png";
 import emailIcon from "../../assets/email.png";
 import emailIconWhite from "../../assets/email-icon-white.png";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
   return (
@@ -105,8 +104,8 @@ const Contact = () => {
             lines: ["+91-77080 61080", "+91-9791259333"],
           },
           {
-            icon: locationIcon,
-            hoverIcon: locationIconWhite,
+            icon: `${<FaLocationDot size={20}/>}`,
+            hoverIcon: <FaLocationDot />,
             title: "Location",
             lines: [
               "223, Dr Rajendra Prasad Rd, Tatabad, Gandhipuram",
