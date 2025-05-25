@@ -59,7 +59,7 @@
 
 
 import curveBackground from "../../assets/curve1.png"; // Replace with the path to your curved background image
-import home from "../../assets/Group 500.png";
+import home from "../../assets/homenew.png";
 import home2 from "../../assets/rectangle2.png";
 import Navbar from "./../Navbar/Navbar";
 import { FaArrowRight } from "react-icons/fa";

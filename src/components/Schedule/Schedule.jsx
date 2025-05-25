@@ -54,7 +54,7 @@
 
 
 
-import ScheduleBAnner from "../../assets/Schedule.png";
+import ScheduleBAnner from "../../assets/schecdule.png";
 import rightIcon from "../../assets/rightIcon.png";
 
 const Schedule = () => {
