@@ -6,7 +6,7 @@ import clockIcon from "../../assets/clock-icon-pink.png";
 import clockIconWhite from "../../assets/clock-icon.png";
 import emailIcon from "../../assets/email.png";
 import emailIconWhite from "../../assets/email-icon-white.png";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationArrow } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -24,8 +24,8 @@ const Contact = () => {
             lines: ["+91-77080 61080", "+91-9791259333"],
           },
           {
-            icon: `${<FaLocationDot size={20}/>}`,
-            hoverIcon: <FaLocationDot />,
+            icon: <FaLocationArrow />
+ ,
             title: "Location",
             lines: [
               "223, Dr Rajendra Prasad Rd, Tatabad, Gandhipuram",
