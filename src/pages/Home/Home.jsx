@@ -27,7 +27,6 @@ const Home = () => {
     <>
       {/* <Banner /> */}
       <BannerNew />
-{/* <MobileBanner/> */}
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <Department />
       </div>
