@@ -556,14 +556,13 @@ const Service = () => {
               surgeons and other Specialists are committed in restoring function,
               reducing pain, and early recovery for patients of
               all ages. <br /> <br /> 
-              Expertise in Hip, knee, and Shoulder Replacements use the latest
-              minimally invasive techniques for faster recovery and
+              Expertise in Hip, knee, and Shoulder Replacements use the latest techniques for faster recovery and
               optimal outcomes. Sports-injury treatement,
-              including ACL Reconstruction, Meniscus repair, and Rotator cuff
+              including Arthroscopic, ACL Reconstruction, Meniscus repair, and Rotator cuff
               surgery help Athletes return to their peak performance at the earliest . <br />{" "}
               <br />
               State of art treatment for Fractures, Dislocations, and other
-              traumatic condition, with a focus on rapid recovery are done.
+              traumatic conditions, with a focus on rapid recovery are done.
               Specialized care for Spine disorders, including Slipped discs,
               Spinal stenosis, and Scoliosis utilizing both surgical and
               non-surgical approaches are being done.

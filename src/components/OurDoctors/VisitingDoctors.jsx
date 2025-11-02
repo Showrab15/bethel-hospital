@@ -147,7 +147,7 @@ const VisitingDoctors = () => {
     {
       id: 4,
       name: "Dr. Senthil",
-      role: "M.D.S Maxillo facial",
+      role: "M.D.S (Maxillo-facial)",
       role2: "DENTAL SURGEON",
       image: visitingDoctor,
     },
@@ -155,14 +155,14 @@ const VisitingDoctors = () => {
       id: 5,
       name: "Dr. Rajesh Rathnam",
       role: "M.D (Anaesthesia)",
-      role2: "Anaesthesiologist",
+      role2: "ANAESTHESIOLOGIST",
       image: visitingDoctor,
     },
     {
       id: 6,
       name: "Dr. Karthikeyan",
-      role: "DA",
-      role2: "ANAESTHETIST",
+      role: "M.B.B.S., D.A (Anaesthesia) ",
+      role2: "ANAESTHESIOLOGIST",
       image: visitingDoctor,
     },
     {
@@ -176,7 +176,7 @@ const VisitingDoctors = () => {
       id: 8,
       name: "Dr. Karthikeyan",
       role: "D (Ortho) DNB (Ortho)",
-      role2: "fellow in spine surgery SPINE SURGEON",
+      role2: "Fellowship in spine surgery SPINE SURGEON",
       image: visitingDoctor,
     },
     {
@@ -195,21 +195,21 @@ const VisitingDoctors = () => {
       </h1>
       <div className="mx-auto mt-10 px-10">
         <div className="cursor-pointer grid md:grid-cols-3 gap-10 justify-around">
-          {visitingDoctors.map((doctor, index) => (
+          {visitingDoctors.map((visitingDoctor, index) => (
             <div
               key={index}
               className="relative bg-[#8F3E97] text-white p-4 rounded-lg overflow-hidden group" // Added 'group' for hover effect
             >
               <img
-                src={doctor.image}
-                alt={doctor.name}
+                src={visitingDoctor.image}
+                alt={visitingDoctor.name}
                 className="flex  filter-none justify-center mx-auto w-20 h- 72 object-cover rounded-lg mb-4" // Reduced size and added rounded corners
               />
                             <div className="absolute top-0 left-0 w-full h-full bg-[#8F3E97] bg-opacity-30 transform translate-x-full group-hover:translate-x-0 transition-all duration-500"></div>
 
               <div className="text-center">
-                <h2 className="text-lg font-semibold">{doctor.name}</h2>
-                <p className="text-sm">{doctor.role} <br /> {doctor.role2 ? doctor.role2 : ''}</p>
+                <h2 className="text-lg font-semibold">{visitingDoctor.name}</h2>
+                <p className="text-sm ">{visitingDoctor.role} <br /> {visitingDoctor.role2 ? visitingDoctor.role2 : ''}</p>
               </div>
             </div>
           ))}
