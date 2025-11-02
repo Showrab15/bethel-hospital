@@ -35,7 +35,7 @@ Developed with a focus on accessibility, performance, and a seamless browsing ex
 
 
 ## 📁 Folder Structure
-
+``` 
 bethel-hospital/
 ├── public/
 ├── src/
@@ -46,7 +46,7 @@ bethel-hospital/
 │ ├── App.jsx
 │ └── main.jsx
 └── package.json
-
+```
 ## 🧑‍💻 Developer
 
 Developed by: Showrab Paul
