@@ -3,7 +3,9 @@
 A modern, responsive, and fully dynamic hospital website built for **Bethel Hospital**, showcasing their departments, doctors, facilities, and services.  
 Developed with a focus on accessibility, performance, and a seamless browsing experience for patients and visitors.
 
----
+## 🔗 Live Demo  
+👉 **[Visit Live Site](https://majestic-paprenjak-9afdb8.netlify.app/)**
+
 
 ## 🚀 Tech Stack
 
@@ -31,7 +33,19 @@ Developed with a focus on accessibility, performance, and a seamless browsing ex
 - 📞 **Quick Contact Section** – Phone, email, and address details  
 - 📰 **SEO Optimized** – Meta tags and structured data for better discoverability  
 
----
+
+## 📁 Folder Structure
+
+bethel-hospital/
+├── public/
+├── src/
+│ ├── assets/
+│ ├── components/
+│ ├── pages/
+│ ├── router/
+│ ├── App.jsx
+│ └── main.jsx
+└── package.json
 
 ## 🧑‍💻 Developer
 
